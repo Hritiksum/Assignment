@@ -1,0 +1,21 @@
+
+<%- include("partials/header"); -%>
+<h1>Question 2</h1>
+<form class="" action="/q2" method="post">
+  <div class="form-group">
+    <label>Input Data</label><br>
+    <small>Input data in single line string</small><br>
+    <small>expamle: 5,000 2020-04-30 LM 7,000 2020-05-31 LM 8,000 2020-06-30 LM</small>
+    <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+
+<br>
+<%if(sum!==0){%>
+  <p>Answer is: <%= sum %></p>
+  <%}%>
+
+
+<%- include("partials/footer"); -%>
